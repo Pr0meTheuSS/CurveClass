@@ -12,7 +12,7 @@
 4. graphically displays all data
 
 ## Utility Modules ##
-- __CurveClass__ - initial main class, cintains all function modules
+- __CurveClass__ - initial main class, contains all function modules
 - __ParseAlgCurve__ - module for parsing coefficients for next modules *(if input invariant is violated - throw exception)*
 - __CalcInvariant__ - module for calculating curves's invariant
 - __CalcTransformations__ - module for calculating matrix tranfsformations to bring curve to the canonical form
