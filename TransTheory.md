@@ -3,7 +3,7 @@
 ### __Defenitions__ ###
 
 #### Algebraic equation of second order curve: ####
-a<sub>11</sub> * x<sup>2</sup> + a<sub>12</sub> * xy + a<sub>22</sub> * y<sup>2</sup> + a<sub>13</sub> * x + a<sub>23</sub> + y + a<sub>33</sub> = 0
+a<sub>11</sub> * x<sup>2</sup> + a<sub>12</sub> * xy + a<sub>22</sub> * y<sup>2</sup> + a<sub>13</sub> * x + a<sub>23</sub> * y + a<sub>33</sub> = 0
  
 
 #### Quadratic matrix (algberaic coefficients matrix): ####
