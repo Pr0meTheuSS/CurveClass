@@ -14,3 +14,12 @@ a<sub>11</sub> * x<sup>2</sup> + a<sub>12</sub> * xy + a<sub>22</sub> * y<sup>2<
 | a<sub>13</sub> | a<sub>23</sub> | a<sub>33</sub> |
 
 
+#### Turn matrix : ####
+|                |                |
+| -------------- | -------------- | 
+|      cos(a)    |     -sin(a)    |
+|      sin(a)    |      cos(a)    |
+
+
+ ``The reduction of the algebraic equation of a second-order curve to the __canonical form__
+ always can be represented as a composition of **rotation and translation**.``
