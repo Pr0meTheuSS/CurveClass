@@ -7,17 +7,15 @@ a<sub>11</sub> * x<sup>2</sup> + a<sub>12</sub> * xy + a<sub>22</sub> * y<sup>2<
  
 
 #### Quadratic matrix (algebraic coefficients matrix): ####
-|                |                |                |
-| -------------- | -------------- | -------------- |
 | a<sub>11</sub> | a<sub>12</sub> | a<sub>13</sub> |
+| -------------- | -------------- | -------------- |
 | a<sub>12</sub> | a<sub>22</sub> | a<sub>23</sub> |
 | a<sub>13</sub> | a<sub>23</sub> | a<sub>33</sub> |
 
 
 #### Turn matrix : ####
-|                |                |
-| -------------- | -------------- | 
 |      cos(a)    |     -sin(a)    |
+| -------------- | -------------- | 
 |      sin(a)    |      cos(a)    |
 
 

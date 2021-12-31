@@ -2,7 +2,7 @@
 
 def CalcTransformations(coefficientsMatrix, curveInvariant):
     """
-    doc...
+    TODO: doc
     """
     
 
