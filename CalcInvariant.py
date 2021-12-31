@@ -16,17 +16,22 @@ def CalcInvariant(coefficientsMatrix):
     """
     Calculates all invariants and gets result as ECurveClassType variable 
     """
-   
     # Logging part
+    # Genetrate logger with name equal module name
     logger = logging.GetLogger(__name__)
+    # Create handler with file output
     file_handler = logging.FileHandler(__name__ + ".log")
-    log_formatter = logging.Formatter('%(asctime)s - %(level name)s - %(filename)s - %(funcName)s - %(lineno)s - %(msg)')
+    # Create formatter and add to handler
+    log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(lineno)s - %(msg)')
+    file_handler.setFormatter(log_formatter)
+    # Add handler to logger
+    logger.addHandler(file_handler)
     logger.info("Calc invariant module working")
-   
+    
     invariantType = 0
 
     s = coefficientsMatrix[0][0] + coefficientsMatrix[1][1] 
-    
+
     # Calc matrix det range == 3
     largeDelta = np.linalg.det(coefficientsMatrix)
     
