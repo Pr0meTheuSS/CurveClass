@@ -3,10 +3,10 @@ import numpy as np
 
 def CalcTransformations(coefficient_matrix):
     """
-  , curveInvariant
-  Module for calculation move vector and rotation angle for 
-  representation alg. curve into canonical form
-  """
+    curveInvariant
+    Module for calculation move vector and rotation angle for
+    representation alg. curve into canonical form
+    """
     # Extract submatrix
     A = coefficient_matrix[0:2, 0:2]
     # Make matrix for resolving symmetry center system

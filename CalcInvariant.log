@@ -1,0 +1,7 @@
+2022-02-23 17:06:43,929 - INFO - CalcInvariant.py - CalcInvariant - 32 - Calc invariant module working
+2022-02-23 17:06:43,929 - DEBUG - CalcInvariant.py - CalcInvariant - 46 - Quadratic form is:
+ [[ 2 -1]
+ [-1  2]]
+2022-02-23 17:06:43,929 - DEBUG - CalcInvariant.py - CalcInvariant - 47 - Det of quadratic form is: 2.9999999999999996
+2022-02-23 17:06:43,929 - DEBUG - CalcInvariant.py - CalcInvariant - 48 - Calculated all invariants variable
+2022-02-23 17:06:43,929 - DEBUG - CalcInvariant.py - CalcInvariant - 69 - Detected curve type, all works done
