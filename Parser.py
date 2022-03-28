@@ -3,10 +3,11 @@ import numpy as np
 
 def GetUniqueTokens(quadratic_form: str) -> list:
     # Allowable tokens in string
-    tokens_list = ['+', '-', '^', '*', ' ']
+    tokens_list = ['+', '-', '^', '*', ' ', '.', ',']
     # List of customer's variable's names
     unique_tokens_list = []
     # Collect unique tokens ~ customer's variable's names
+
     for ch in quadratic_form:
         if ch not in tokens_list and not ch.isdigit() and ch not in unique_tokens_list:
             unique_tokens_list.append(ch)
@@ -41,15 +42,14 @@ def GetTermsList(quadratic_form: str, variables: list) -> list:
 
 def ParseCoefficient(quadratic_form: str) -> np.array:
     """
-    :rtype: object
     """
     variables = GetUniqueTokens(quadratic_form)
     assert(len(variables) == 2)
     # Empty coefficient matrix to return
-    coeff_matrix = np.array([[0, 0, 0],
-                             [0, 0, 0],
-                             [0, 0, 0]
-                             ])
+    c_matrix: np.array = np.array([[0, 0, 0],
+                                  [0, 0, 0],
+                                  [0, 0, 0]
+                                   ])
     terms_list = GetTermsList(quadratic_form, variables)
     var_perm = {variables[0] * 2: [(0, 0)],
                 variables[0] + variables[1]: [(0, 1), (1, 0)],
@@ -74,8 +74,8 @@ def ParseCoefficient(quadratic_form: str) -> np.array:
             literal_part = 'free_value'
         formatted_term = term.replace(literal_part, '')
         for pos in var_perm[literal_part]:
-            coeff_matrix[pos[0]][pos[1]] = GetInt(formatted_term)
-    return coeff_matrix
+            c_matrix[pos[0]][pos[1]] = GetInt(formatted_term)
+    return c_matrix
 
 
 if __name__ == '__main__':
