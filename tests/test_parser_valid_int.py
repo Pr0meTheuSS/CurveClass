@@ -1,10 +1,10 @@
 import numpy as np
 import random
 import string
-from Parser import ParseCoefficient
+from parser_m.Parser import ParseCoefficient
 
 
-def CreateValidTestForParser(matrix: np.array) -> str:
+def CreateValidIntTestForParser(matrix: np.array) -> str:
     # Generate random variable's names
     var_names = [random.choice(string.ascii_letters), random.choice(string.ascii_letters)]
     # If names are the same
@@ -25,13 +25,13 @@ def CreateValidTestForParser(matrix: np.array) -> str:
 
 def test_valid_input_parser():
     # Generate random symmetry matrix 3x3
-    c_matrix = np.random.randint(-1000, 1000, size=(3, 3))
+    c_matrix: np.array = np.random.randint(-1000, 1000, size=(3, 3))
     for i in range(len(c_matrix)):
         for j in range(len(c_matrix[0])):
             c_matrix[i][j] = c_matrix[j][i]
     # print(c_matrix)
 
-    test_in = CreateValidTestForParser(c_matrix)
+    test_in: str = CreateValidIntTestForParser(c_matrix)
     # print(test_in)
     answer: np.array = ParseCoefficient(test_in)
     # print(answer)
