@@ -5,9 +5,9 @@ def GetUniqueTokens(quadratic_form: str) -> list:
     # Allowable tokens in string
     tokens_list = ['+', '-', '^', '*', ' ', '.', ',']
     # List of customer's variable's names
-    unique_tokens_list = []
+    unique_tokens_list: list[str] = []
     # Collect unique tokens ~ customer's variable's names
-
+    # TODO: change to list generator
     for ch in quadratic_form:
         if ch not in tokens_list and not ch.isdigit() and ch not in unique_tokens_list:
             unique_tokens_list.append(ch)
