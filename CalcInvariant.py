@@ -30,9 +30,7 @@ def CalcInvariant(coefficient_matrix):
     # Add handler to logger
     logger.addHandler(file_handler)
     logger.info("Calc invariant module working")
-
     inv_type = 0
-
     s = coefficient_matrix[0][0] + coefficient_matrix[1][1]
 
     # Calc matrix det range == 3

@@ -4,6 +4,7 @@ import string
 from Parser import ParseCoefficient
 
 
+# TODO: rebuild like fixture
 def CreateValidIntTestForParser(matrix: np.array) -> str:
     # Generate random variable's names
     var_names = [random.choice(string.ascii_letters), random.choice(string.ascii_letters)]
@@ -23,6 +24,7 @@ def CreateValidIntTestForParser(matrix: np.array) -> str:
                                                                                     y=var_names[1])
 
 
+# TODO: rebuild within fixture
 def test_valid_input_parser():
     # Generate random symmetry matrix 3x3
     c_matrix: np.array = np.random.randint(-1000, 1000, size=(3, 3))
